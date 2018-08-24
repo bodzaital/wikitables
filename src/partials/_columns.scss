@@ -1,0 +1,23 @@
+td
+{
+	vertical-align: top;
+	padding-top: $row-p-half;
+	padding-bottom: $row-p-half;
+
+	&:first-child:not(:only-child)
+	{
+		font-weight: bold;
+		width: 40%;
+		padding-left: $row-p-full;
+	}
+
+	&:last-child:not(:only-child)
+	{
+		padding-right: $row-p-full;
+	}
+}
+
+tr:nth-child(2) td
+{
+	padding-top: 0;
+}

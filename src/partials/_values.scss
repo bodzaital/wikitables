@@ -1,0 +1,13 @@
+$base: 16px;
+
+// The total width of the infobox.
+$table-width: $base * 20;
+
+// The default font size.
+$font-size-base: $base * .875;
+
+// Padding for full and half rows.
+$row-p-full: $base / 2;
+$row-p-half: $row-p-full / 2;
+
+$featured-image-width: 90%;

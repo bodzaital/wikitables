@@ -1,0 +1,21 @@
+figure
+{
+	margin: 0;
+}
+
+.featured-image
+{
+	text-align: center;
+
+	img
+	{
+		width: $featured-image-width;
+		height: auto;
+	}
+
+	figcaption
+	{
+		width: $featured-image-width;
+		margin: 0 auto;
+	}
+}

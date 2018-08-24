@@ -1,0 +1,17 @@
+.inline-middot
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li
+	{
+		display: inline;
+
+		&:not(:last-child):after
+		{
+			content: ' · ';
+			font-weight: bold;
+		}
+	}
+}

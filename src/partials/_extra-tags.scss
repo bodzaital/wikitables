@@ -1,0 +1,20 @@
+a
+{
+	color: $color-link-blue;
+	text-decoration: none;
+
+	&:hover
+	{
+		text-decoration: underline;
+	}
+
+	&.redlink
+	{
+		color: $color-link-red;
+	}
+}
+
+sup
+{
+	line-height: 0;
+}

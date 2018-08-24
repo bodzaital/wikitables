@@ -1,0 +1,24 @@
+%generic-heading
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+.table-heading
+{
+	td
+	{
+		@extend %generic-heading;
+		
+		font-size: $font-size-base * 1.25;
+		padding: $row-p-half;
+	}
+}
+
+.section-heading
+{
+	td
+	{
+		@extend %generic-heading;
+	}
+}
