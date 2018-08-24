@@ -26,10 +26,7 @@
 }
 .infobox td {
   vertical-align: top;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 4px 8px;
 }
 .infobox td:first-child:not(:only-child) {
   font-weight: bold;

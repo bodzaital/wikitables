@@ -1,11 +1,10 @@
 td
 {
+	// Basic column/cell styles.
 	vertical-align: top;
-	padding-top: $row-p-half;
-	padding-bottom: $row-p-half;
-	padding-left: $row-p-full;
-	padding-right: $row-p-full;
+	padding: $row-p-half $row-p-full;
 	
+	// Set first column style when not a merged column.
 	&:first-child:not(:only-child)
 	{
 		font-weight: bold;
@@ -13,6 +12,7 @@ td
 	}
 }
 
+// Remove the top padding on the second row so the heading appears vertically centered.
 tr:nth-child(2) td
 {
 	padding-top: 0;
