@@ -35,7 +35,7 @@
 .infobox tr:nth-child(2) td {
   padding-top: 0;
 }
-.infobox .section-heading td, .infobox .table-heading td {
+.infobox .vertical-heading, .infobox .section-heading td, .infobox .table-heading td {
   font-weight: bold;
   text-align: center;
 }
@@ -67,6 +67,12 @@
 .infobox .inline-middot li:not(:last-child):after {
   content: " · ";
   font-weight: bold;
+}
+.infobox .vertical-value {
+  text-align: center;
+}
+.infobox .vertical-value img {
+  width: 50%;
 }
 
 /*# sourceMappingURL=wikitables.css.map */
