@@ -3,17 +3,13 @@ td
 	vertical-align: top;
 	padding-top: $row-p-half;
 	padding-bottom: $row-p-half;
-
+	padding-left: $row-p-full;
+	padding-right: $row-p-full;
+	
 	&:first-child:not(:only-child)
 	{
 		font-weight: bold;
 		width: 40%;
-		padding-left: $row-p-full;
-	}
-
-	&:last-child:not(:only-child)
-	{
-		padding-right: $row-p-full;
 	}
 }
 

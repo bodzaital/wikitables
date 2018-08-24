@@ -28,14 +28,12 @@
   vertical-align: top;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .infobox td:first-child:not(:only-child) {
   font-weight: bold;
   width: 40%;
-  padding-left: 8px;
-}
-.infobox td:last-child:not(:only-child) {
-  padding-right: 8px;
 }
 .infobox tr:nth-child(2) td {
   padding-top: 0;
@@ -46,7 +44,6 @@
 }
 .infobox .table-heading td {
   font-size: 17.5px;
-  padding: 4px;
 }
 .infobox figure {
   margin: 0;
