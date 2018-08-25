@@ -24,6 +24,11 @@
 .infobox sup {
   line-height: 0;
 }
+.infobox svg.external {
+  width: 14px;
+  height: 14px;
+  padding-left: 1px;
+}
 .infobox td {
   vertical-align: top;
   padding: 4px 8px;

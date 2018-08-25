@@ -18,3 +18,10 @@ sup
 {
 	line-height: 0;
 }
+
+svg.external
+{
+	width: $font-size-base;
+	height: $font-size-base;
+	padding-left: 1px;
+}
