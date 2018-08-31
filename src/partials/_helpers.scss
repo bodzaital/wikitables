@@ -1,0 +1,50 @@
+svg.external-vector
+{
+	width: $font-size-base;
+	height: $font-size-base;
+	padding-left: 1px;
+}
+
+.coordinates
+{
+	font-size: $font-size-base * .85;
+}
+
+img.coordinate-globe
+{
+	vertical-align: middle;
+	padding-right: $font-size-base / 4;
+}
+
+%good-path
+{
+	polygon
+	{
+		fill: $color-good-poly;
+	}
+}
+
+%bad-path
+{
+	polygon
+	{
+		fill: $color-bad-poly;
+	}
+}
+
+svg.arrow
+{
+	width: $font-size-base;
+	height: $font-size-base;
+	vertical-align: middle;
+
+	&.positive
+	{
+		@extend %good-path;
+	}
+
+	&.negative
+	{
+		@extend %bad-path;
+	}
+}

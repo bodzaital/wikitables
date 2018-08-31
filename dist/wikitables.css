@@ -24,11 +24,6 @@
 .infobox sup {
   line-height: 0;
 }
-.infobox svg.external {
-  width: 14px;
-  height: 14px;
-  padding-left: 1px;
-}
 .infobox td {
   vertical-align: top;
   padding: 4px 8px;
@@ -78,6 +73,29 @@
 }
 .infobox .vertical-value img {
   width: 50%;
+}
+.infobox svg.external-vector {
+  width: 14px;
+  height: 14px;
+  padding-left: 1px;
+}
+.infobox .coordinates {
+  font-size: 11.9px;
+}
+.infobox img.coordinate-globe {
+  vertical-align: middle;
+  padding-right: 3.5px;
+}
+.infobox svg.arrow.negative.decrease polygon, .infobox svg.arrow.positive.increase polygon {
+  fill: green;
+}
+.infobox svg.arrow.negative.increase polygon, .infobox svg.arrow.positive.decrease polygon {
+  fill: red;
+}
+.infobox svg.arrow {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=wikitables.css.map */
