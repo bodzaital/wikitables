@@ -24,8 +24,8 @@ function CoordinatesGlobeImage() {
 
 /**
  * Creates an svg element with an arrow.
- * @param {string} type - Shape of the arrow; positive/negative/steady.
- * @param {string} direction - Optional: If type is positive or negative, the direction of the arrow; increase/decrease.
+ * @param {string} type - The trend of the arrow. Positive is green, negative is red, steady is a blue horizontal bar.
+ * @param {string} direction - Optional: If type is positive or negative, increase is an upward facing triangle, decrease is a downward facing triangle.
  */
 function ArrowVectors(type, direction = null) {
 	let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -34,14 +34,15 @@ function ArrowVectors(type, direction = null) {
 
 	switch (direction) {
 		case "increase":
-			svg.innerHTML = '<polygon fill="#231F20" points="1.696,12.304 7,1.696 12.304,12.304 "/>';
+			svg.innerHTML = '<polygon fill="black" points="1.696,12.304 7,1.696 12.304,12.304 "/>';
 			break;
-
 		case "decrease":
+			svg.innerHTML = '<polygon fill="black" points="12.305,1.695 7,12.305 1.695,1.695 "/>';
 			break;
-	
-		// steady
 		default:
+			// svg.innerHTML = '<polygon fill="black" points="12.305,1.695 7,12.305 1.695,1.695 "/>';
+			svg.innerHTML = '<polygon fill="black" points="1.695,6 12.304,6 12.304,8 1.695,8 "/>';
+			// svg.innerHTML = '<rect x="1.695" y="6" fill="blac" width="10.609" height="2"/>';
 			break;
 	}
 
@@ -50,8 +51,8 @@ function ArrowVectors(type, direction = null) {
 
 /**
  * Adds a new element after every anchor elements.
- * @param {string} anchorElement - CSS selector of the parent/anchor nodes.
- * @param {Element} newElement - the node to insert.
+ * @param {string} anchorElement - CSS selector of the parent/anchor elements.
+ * @param {Element} newElement - the element to insert.
  */
 function AddAfter(anchorElement, newElement) {
 	let parentElements = document.querySelectorAll(anchorElement);
@@ -60,6 +61,11 @@ function AddAfter(anchorElement, newElement) {
 	});
 }
 
+/**
+ * Adds a new element before every anchor elements.
+ * @param {string} anchorElement - CSS selector of the next elements.
+ * @param {Element} newElement - the element to insert.
+ */
 function AddBefore(anchorElement, newElement) {
 	let parentElements = document.querySelectorAll(anchorElement);
 	parentElements.forEach(e => {
@@ -67,6 +73,15 @@ function AddBefore(anchorElement, newElement) {
 	});
 }
 
+// Add the external vector to all links with the .external class.
 AddAfter("a.external", ExternalLinkVector());
+
+// Add the globe before all coordinates with the .coordinates class.
 AddBefore(".coordinates", CoordinatesGlobeImage());
-AddBefore(".test", ArrowVectors("positive", "increase"));
+
+// Add the trend triangles (positive-negative, increase-decrease).
+AddBefore(".pos-inc", ArrowVectors("positive", "increase"));
+AddBefore(".pos-dec", ArrowVectors("positive", "decrease"));
+AddBefore(".neg-inc", ArrowVectors("negative", "increase"));
+AddBefore(".neg-dec", ArrowVectors("negative", "decrease"));
+AddBefore(".steady", ArrowVectors("steady"));

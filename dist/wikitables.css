@@ -86,16 +86,19 @@
   vertical-align: middle;
   padding-right: 3.5px;
 }
-.infobox svg.arrow.negative.decrease polygon, .infobox svg.arrow.positive.increase polygon {
-  fill: green;
-}
-.infobox svg.arrow.negative.increase polygon, .infobox svg.arrow.positive.decrease polygon {
-  fill: red;
-}
 .infobox svg.arrow {
   width: 14px;
   height: 14px;
-  vertical-align: middle;
+  vertical-align: text-top;
+}
+.infobox svg.arrow.positive polygon {
+  fill: #00cd2f;
+}
+.infobox svg.arrow.negative polygon {
+  fill: #de2f2f;
+}
+.infobox svg.arrow.steady polygon {
+  fill: #0571a7;
 }
 
 /*# sourceMappingURL=wikitables.css.map */

@@ -16,35 +16,32 @@ img.coordinate-globe
 	padding-right: $font-size-base / 4;
 }
 
-%good-path
-{
-	polygon
-	{
-		fill: $color-good-poly;
-	}
-}
-
-%bad-path
-{
-	polygon
-	{
-		fill: $color-bad-poly;
-	}
-}
-
 svg.arrow
 {
 	width: $font-size-base;
 	height: $font-size-base;
-	vertical-align: middle;
+	vertical-align: text-top;
+
+	@mixin polygon-fill($color)
+	{
+		polygon
+		{
+			fill: $color;
+		}
+	}
 
 	&.positive
 	{
-		@extend %good-path;
+		@include polygon-fill($color-good-poly);
 	}
 
 	&.negative
 	{
-		@extend %bad-path;
+		@include polygon-fill($color-bad-poly);
+	}
+
+	&.steady
+	{
+		@include polygon-fill($color-steady-poly);
 	}
 }
