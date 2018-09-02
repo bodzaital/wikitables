@@ -100,5 +100,20 @@
 .infobox svg.arrow.steady polygon {
   fill: #0571a7;
 }
+.infobox .text-verygood {
+  color: darkgreen;
+}
+.infobox .text-good {
+  color: forestgreen;
+}
+.infobox .text-medium {
+  color: orange;
+}
+.infobox .text-bad {
+  color: red;
+}
+.infobox .text-verybad {
+  color: darkred;
+}
 
 /*# sourceMappingURL=wikitables.css.map */

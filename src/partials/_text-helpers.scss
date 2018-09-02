@@ -1,0 +1,25 @@
+.text-
+{
+	&verygood
+	{
+		color: $color-verygood;
+	}
+	
+	&good
+	{
+		color: $color-good;
+	}
+	&medium
+	{
+		color: $color-medium;
+	}
+	&bad
+	{
+		color: $color-bad;
+	}
+	&verybad
+	{
+		color: $color-verybad;
+	}
+
+}
