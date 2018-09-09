@@ -1,7 +1,7 @@
 # wikitables
 
 [![project status](https://img.shields.io/badge/status-in_development-yellow.svg)](#)
-[![milestone version](https://img.shields.io/badge/milestone-2-lightgray.svg)](#)
+[![milestone version 2](https://img.shields.io/badge/milestone-2-lightgray.svg)](#)
 [![apache 2 license](https://img.shields.io/github/license/bodzaital/wikitables.svg)](https://github.com/bodzaital/wikitables/blob/master/LICENSE)
 
 **A small CSS and Javascript framework to imitate a Wikipedia infobox.**

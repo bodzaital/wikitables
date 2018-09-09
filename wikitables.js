@@ -40,9 +40,7 @@ function ArrowVectors(type, direction = null) {
 			svg.innerHTML = '<polygon fill="black" points="12.305,1.695 7,12.305 1.695,1.695 "/>';
 			break;
 		default:
-			// svg.innerHTML = '<polygon fill="black" points="12.305,1.695 7,12.305 1.695,1.695 "/>';
 			svg.innerHTML = '<polygon fill="black" points="1.695,6 12.304,6 12.304,8 1.695,8 "/>';
-			// svg.innerHTML = '<rect x="1.695" y="6" fill="blac" width="10.609" height="2"/>';
 			break;
 	}
 

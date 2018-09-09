@@ -12,8 +12,24 @@ td
 	}
 }
 
+&.equal
+{
+	td:first-child:not(:only-child)
+	{
+		width: 50%;
+	}
+}
+
 // Remove the top padding on the second row so the heading appears vertically centered.
-tr:nth-child(2) td
+&:not(.striped) tr:nth-child(2) td
 {
 	padding-top: 0;
+}
+
+.merged
+{
+	td
+	{
+		padding-bottom: 0;
+	}
 }

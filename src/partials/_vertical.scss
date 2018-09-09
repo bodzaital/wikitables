@@ -1,9 +1,30 @@
+%subelement-setting
+{
+	img
+	{
+		width: 80%;
+	}
+}
+
 .vertical-value
 {
 	text-align: center;
 
-	img
+	@extend %subelement-setting;
+
+	td
 	{
-		width: 50%;
+		padding-top: 0;
+	}
+}
+
+.vertical-heading
+{
+	@extend %generic-heading;
+	@extend %subelement-setting;
+
+	td
+	{
+		padding-bottom: 0;
 	}
 }
