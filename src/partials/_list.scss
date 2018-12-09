@@ -1,0 +1,22 @@
+// Styles of lists.
+
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.middot
+{
+	li
+	{
+		display: inline-block;
+	}
+
+	li:not(:last-of-type)::after
+	{
+		content: " · ";
+		font-weight: bold;
+	}
+}

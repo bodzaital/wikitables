@@ -1,0 +1,21 @@
+// Oh shit, here we go again. Hopefully it's not a clusterfuck this time.
+
+@import "partials/values";
+@import "partials/colors";
+
+.infobox
+{
+	width: $w;
+	font-family: sans-serif;
+	font-size: $f;
+	background-color: $color_background;
+	border: 1px solid $color_border;
+	border-spacing: 0;
+	line-height: 1.5;
+
+	@import "partials/utils";
+	@import "partials/header";
+	@import "partials/basic";
+	@import "partials/featured";
+	@import "partials/list";
+}

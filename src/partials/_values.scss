@@ -1,0 +1,16 @@
+// Values shared across the framework.
+
+// The base unit
+$u: 16px;
+
+// Base font size.
+$f: $u * .77;
+
+// Header font size.
+$font_header_size: $f * 1.25;
+
+// The width of the table.
+$w: $u * 17;
+
+$pf: .25 * $u;
+$ph: .4 * $u;
