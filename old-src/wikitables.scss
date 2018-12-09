@@ -1,0 +1,26 @@
+@import "partials/colors";
+@import "partials/values";
+
+.infobox
+{
+	font-family: sans-serif;
+	font-size: $n;
+	line-height: 1.5;
+	
+	background-color: $color-background;
+	border: 1px solid $color-border;
+	border-collapse: collapse;
+	width: $base-width;
+
+	@import "partials/columns";
+	@import "partials/rows";
+	@import "partials/lists";
+	@import "partials/extra-tags";
+
+	// @import "partials/striped";
+	// @import "partials/headings";
+	// @import "partials/featured-image";
+	// @import "partials/vertical";
+	// @import "partials/helpers";
+	// @import "partials/text-helpers";
+}

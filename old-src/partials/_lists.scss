@@ -1,4 +1,5 @@
-// An inline list with dots between elements.
+// Various lists.
+
 .inline-middot
 {
 	margin: 0;
@@ -15,11 +16,4 @@
 			font-weight: bold;
 		}
 	}
-}
-
-.no-style
-{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
 }

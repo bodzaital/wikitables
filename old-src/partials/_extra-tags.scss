@@ -1,3 +1,6 @@
+// Supporting tags styled directly.
+
+// Links, including red links.
 a
 {
 	color: $color-link-blue;
@@ -14,6 +17,7 @@ a
 	}
 }
 
+// Citation indexes.
 sup
 {
 	line-height: 0;
