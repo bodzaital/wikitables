@@ -1,19 +1,19 @@
 td
 {
 	vertical-align: top;
-	padding: 0 $ph $pf;
-	// line-height: 1.5;
+	padding: $ph $pf;
 }
 
-// This basically selects the first column on key-value rows.
+// On key-value rows, this is the first column.
 td:not(:only-child):first-child
 {
 	font-weight: bold;
 	width: 39%;
-	padding: 0 0 $pf $ph;
+	padding: $ph 0 $ph $pf;
 }
 
+// On key-value rows, this is the second column.
 td:not(:only-child):last-child
 {
-	padding: 0 $ph $pf 0;
+	padding: $ph $pf $ph 0;
 }

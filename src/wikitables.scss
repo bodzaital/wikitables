@@ -14,8 +14,14 @@
 	line-height: 1.5;
 
 	@import "partials/utils";
-	@import "partials/header";
 	@import "partials/basic";
+	@import "partials/header";
 	@import "partials/featured";
 	@import "partials/list";
+
+	// In special infoboxes, some properties are overridden, e.g. in royalty, th and .section-header have background colors.
+	&.royalty
+	{
+		@import "partials/royalty/header";
+	}
 }

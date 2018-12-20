@@ -19,26 +19,25 @@
 .infobox a:hover {
   text-decoration: underline;
 }
-.infobox th {
-  font-size: 15.4px;
-  padding: 3.2px 0;
-}
-.infobox tr.section-header td {
-  text-align: center;
-  font-weight: bold;
-  padding: 4px 0;
-}
 .infobox td {
   vertical-align: top;
-  padding: 0 6.4px 4px;
+  padding: 2px 6px;
 }
 .infobox td:not(:only-child):first-child {
   font-weight: bold;
   width: 39%;
-  padding: 0 0 4px 6.4px;
+  padding: 2px 0 2px 6px;
 }
 .infobox td:not(:only-child):last-child {
-  padding: 0 6.4px 4px 0;
+  padding: 2px 6px 2px 0;
+}
+.infobox th {
+  font-size: 15.4px;
+  padding: 6px 0 2px;
+}
+.infobox tr.section-header td {
+  text-align: center;
+  font-weight: bold;
 }
 .infobox figure {
   margin: 0 auto;
@@ -55,6 +54,22 @@
 }
 .infobox ul.middot li:not(:last-of-type)::after {
   content: " · ";
+  font-weight: bold;
+}
+.infobox.royalty th {
+  font-size: 15.4px;
+  padding: 6px 0 2px;
+  background-color: #cbe;
+}
+.infobox.royalty tr.section-header td {
+  text-align: center;
+  font-weight: bold;
+  background-color: #e4dcf6;
+}
+.infobox.royalty tr.section-header.in-office td {
+  font-weight: normal;
+}
+.infobox.royalty tr.section-header.in-office td li:first-child {
   font-weight: bold;
 }
 

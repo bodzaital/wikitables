@@ -3,7 +3,7 @@
 th
 {
 	font-size: $font-header_size;
-	padding: $ph / 2 0;
+	padding: $pf 0 $ph;
 }
 
 tr.section-header
@@ -12,6 +12,5 @@ tr.section-header
 	{
 		text-align: center;
 		font-weight: bold;
-		padding: $pf 0;
 	}
 }

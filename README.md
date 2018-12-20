@@ -1,14 +1,23 @@
 # wikitables
 
 [![project status](https://img.shields.io/badge/status-in_development-yellow.svg)](#)
-[![apache 2 license](https://img.shields.io/github/license/bodzaital/wikitables.svg)](https://github.com/bodzaital/wikitables/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/bodzaital/wikitables.svg)](https://github.com/bodzaital/wikitables/blob/master/LICENSE)
 
-**A small CSS and Javascript framework to imitate a Wikipedia infobox.**
+A small Css and Js framework to create Wikipedia-styled infoboxes.
 
-This shit is purged again, restarting for the third time. I cannot for the life of me finish, university took so much fucking time from me.
+## Basic usage
 
----
+```html
+<table class="infobox [type]">
+	<!-- Place rows here. -->
+</table>
+```
 
-me: i can do this, i made a lot of websites
+`[type]` can be either nothing for basic infoboxes, or:
 
-also me: google "how make css fraemwrk"
+- `royalty`:
+	- example: `<table class="infobox royalty">`
+	- changes header color
+	- adds the `in-office` class alongside `section-header` for "in office: [from] - [to]" boxes
+
+Work in progress types are in the projects tab up top.

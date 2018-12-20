@@ -1,0 +1,31 @@
+// Styles of the header.
+
+th
+{
+	font-size: $font-header_size;
+	padding: $pf 0 $ph;
+	background-color: $color_header_historical-person;
+}
+
+tr.section-header
+{
+	td
+	{
+		text-align: center;
+		font-weight: bold;
+		background-color: $color_section-header_historical-person;
+	}
+
+	&.in-office
+	{
+		td
+		{
+			font-weight: normal;
+
+			li:first-child
+			{
+				font-weight: bold;
+			}
+		}
+	}
+}
