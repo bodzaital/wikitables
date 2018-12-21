@@ -19,21 +19,51 @@
 .infobox a:hover {
   text-decoration: underline;
 }
+.infobox span.override-font-weight-normal {
+  font-weight: normal;
+}
+.infobox span.coordinates {
+  font-size: 10.472px;
+}
+.infobox svg.external-vector {
+  width: 12.32px;
+  height: 12.32px;
+  padding-left: 1px;
+}
+.infobox img.coordinate-globe {
+  vertical-align: middle;
+  padding-right: 3.08px;
+}
+.infobox svg.arrow {
+  width: 12.32px;
+  height: 12.32px;
+  vertical-align: text-top;
+  padding-right: 4px;
+}
+.infobox svg.arrow.positive polygon {
+  fill: #00CC33;
+}
+.infobox svg.arrow.negative polygon {
+  fill: red;
+}
+.infobox svg.arrow.steady polygon {
+  fill: blue;
+}
 .infobox td {
   vertical-align: top;
-  padding: 2px 6px;
+  padding: 2.4px 6px;
 }
 .infobox td:not(:only-child):first-child {
   font-weight: bold;
   width: 39%;
-  padding: 2px 0 2px 6px;
+  padding: 2.4px 0 2.4px 6px;
 }
 .infobox td:not(:only-child):last-child {
-  padding: 2px 6px 2px 0;
+  padding: 2.4px 6px 2.4px 0;
 }
 .infobox th {
   font-size: 15.4px;
-  padding: 6px 0 2px;
+  padding: 6px 0 2.4px;
 }
 .infobox tr.section-header td {
   text-align: center;
@@ -57,13 +87,9 @@
   font-weight: bold;
 }
 .infobox.royalty th {
-  font-size: 15.4px;
-  padding: 6px 0 2px;
   background-color: #cbe;
 }
 .infobox.royalty tr.section-header td {
-  text-align: center;
-  font-weight: bold;
   background-color: #e4dcf6;
 }
 .infobox.royalty tr.section-header.in-office td {
@@ -71,6 +97,55 @@
 }
 .infobox.royalty tr.section-header.in-office td li:first-child {
   font-weight: bold;
+}
+.infobox.country td, .infobox.country th {
+  border-bottom: 1px solid #a2a9b1;
+}
+.infobox.country tr.remove-border td {
+  padding: 2.4px 6px 0;
+  border-bottom: none;
+}
+.infobox.country tr.remove-border td:not(:only-child):first-child {
+  padding: 2.4px 0 0 6px;
+}
+.infobox.country tr.remove-border td:not(:only-child):last-child {
+  padding: 2.4px 6px 0 0;
+}
+.infobox.country td:not(:only-child):first-child {
+  width: 50%;
+}
+.infobox.country td:not(:only-child):first-child:not(.key-list) {
+  font-weight: bold;
+}
+.infobox.country tr.vertical {
+  text-align: center;
+}
+.infobox.country tr.vertical.key {
+  font-weight: bold;
+}
+.infobox.country h3.list-header {
+  margin: 0;
+  font-size: 10.472px;
+}
+.infobox.country td.key-list {
+  font-weight: normal;
+}
+.infobox.country td.key-list:before {
+  margin-left: 3.2px;
+  font-weight: bold;
+  content: "• ";
+}
+.infobox.country td.key-list-header {
+  font-weight: bold;
+}
+.infobox.country tr.flag-and-seal td {
+  vertical-align: middle;
+}
+.infobox.country tr.flag-and-seal img {
+  max-height: 88px;
+}
+.infobox.country tr.flag-and-seal td {
+  font-weight: normal !important;
 }
 
 /*# sourceMappingURL=wikitables.css.map */

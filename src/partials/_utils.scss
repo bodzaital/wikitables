@@ -16,3 +16,57 @@ a:hover
 {
 	text-decoration: underline;
 }
+
+span.override-font-weight-normal
+{
+	font-weight: normal;
+}
+
+span.coordinates
+{
+	font-size: $f*.85;
+}
+
+svg.external-vector
+{
+	width: $f;
+	height: $f;
+	padding-left: 1px;
+}
+
+img.coordinate-globe
+{
+	vertical-align: middle;
+	padding-right: $f / 4;
+}
+
+svg.arrow
+{
+	width: $f;
+	height: $f;
+	vertical-align: text-top;
+	padding-right: .25 * $u;
+
+	@mixin polygon-fill($color)
+	{
+		polygon
+		{
+			fill: $color;
+		}
+	}
+
+	&.positive
+	{
+		@include polygon-fill($color-good-poly);
+	}
+
+	&.negative
+	{
+		@include polygon-fill($color-bad-poly);
+	}
+
+	&.steady
+	{
+		@include polygon-fill($color-steady-poly);
+	}
+}

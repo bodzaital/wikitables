@@ -1,0 +1,18 @@
+tr.flag-and-seal
+{
+	td
+	{
+		vertical-align: middle;
+	}
+
+	img
+	{
+		max-height: 5.5 * $u;
+	}
+
+	td
+	{
+		// TODO: something more elegant than this?
+		font-weight: normal!important;
+	}
+}

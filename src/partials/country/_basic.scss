@@ -1,0 +1,41 @@
+td, th
+{
+	border-bottom: 1px solid $color_border;
+}
+
+tr.remove-border td
+{
+	padding: $ph $pf 0;
+	border-bottom: none;
+
+	&:not(:only-child):first-child
+	{
+		padding: $ph 0 0 $pf;
+	}
+
+	&:not(:only-child):last-child
+	{
+		padding: $ph $pf 0 0;
+	}
+}
+
+// On key-value rows, this is the first column.
+td:not(:only-child):first-child
+{
+	width: 50%;
+	
+	&:not(.key-list)
+	{
+		font-weight: bold;
+	}
+}
+
+tr.vertical
+{
+	text-align: center;
+
+	&.key
+	{
+		font-weight: bold;
+	}
+}

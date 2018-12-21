@@ -1,0 +1,16 @@
+td.key-list
+{
+	font-weight: normal;
+	
+	&:before
+	{
+		margin-left: .2 * $u;
+		font-weight: bold;
+		content: "• ";
+	}
+}
+
+td.key-list-header
+{
+	font-weight: bold;
+}

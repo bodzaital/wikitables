@@ -24,4 +24,12 @@
 	{
 		@import "partials/royalty/header";
 	}
+
+	&.country
+	{
+		@import "partials/country/basic";
+		@import "partials/country/header";
+		@import "partials/country/list";
+		@import "partials/country/flag-and-seal";
+	}
 }
