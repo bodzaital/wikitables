@@ -24,7 +24,7 @@ A small Css and Js framework to create Wikipedia-styled infoboxes.
 	- example: `<table class="infobox country">`
 	- changes column width to equal 50%
 	- Adds `flag-and-seal` and `vertical` row types
-	- Adds `remove-border` class that removed the bottom border of rows
+	- Adds `remove-border` class that removes the bottom border of rows
 	- Miscellaneous helper classes (unstyles lists, list headers, etc.)
 
 Work in progress types are in the projects tab up top.
