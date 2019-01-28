@@ -70,3 +70,10 @@ svg.arrow
 		@include polygon-fill($color-steady-poly);
 	}
 }
+
+sup,
+sub
+{
+	line-height: 1;
+	font-size: .8em;
+}

@@ -32,4 +32,10 @@
 		@import "partials/country/list";
 		@import "partials/country/flag-and-seal";
 	}
+
+	&.water
+	{
+		@import "partials/water/basic";
+		@import "partials/water/header";
+	}
 }

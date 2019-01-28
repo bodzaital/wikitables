@@ -17,3 +17,10 @@ td:not(:only-child):last-child
 {
 	padding: $ph $pf $ph 0;
 }
+
+// Are merged cells always centered?
+// TODO: if not, remove this.
+td[colspan="2"]
+{
+	text-align: center;
+}

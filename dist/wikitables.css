@@ -49,6 +49,11 @@
 .infobox svg.arrow.steady polygon {
   fill: blue;
 }
+.infobox sup,
+.infobox sub {
+  line-height: 1;
+  font-size: 0.8em;
+}
 .infobox td {
   vertical-align: top;
   padding: 2.4px 6px;
@@ -60,6 +65,9 @@
 }
 .infobox td:not(:only-child):last-child {
   padding: 2.4px 6px 2.4px 0;
+}
+.infobox td[colspan="2"] {
+  text-align: center;
 }
 .infobox th {
   font-size: 15.4px;
@@ -146,6 +154,12 @@
 }
 .infobox.country tr.flag-and-seal td {
   font-weight: normal !important;
+}
+.infobox.water tr.separator td {
+  border-bottom: 1px solid #cedeff;
+}
+.infobox.water tr th {
+  background-color: #e4dcf6;
 }
 
 /*# sourceMappingURL=wikitables.css.map */
